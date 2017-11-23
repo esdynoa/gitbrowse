@@ -12,7 +12,7 @@ export default class BrowseScene extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Search</Text>
+        <Text style={styles.title}>Browse</Text>
         <Button title="Back" onPress={() => this.props.navigate(ROUTES.HOME)} />
       </View>
     );
@@ -21,9 +21,13 @@ export default class BrowseScene extends Component<Props> {
 
 const styles = StyleSheet.create({
   container: {
+    paddingTop: 30,
     flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center',
+  },
+  title: {
+    fontSize: 20,
+    fontWeight: 'bold',
     justifyContent: 'center',
   },
 });

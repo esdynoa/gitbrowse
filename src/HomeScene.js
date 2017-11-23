@@ -12,7 +12,7 @@ export default class HomeScene extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Welcome</Text>
+        <Text style={styles.title}>Welcome</Text>
         <Button
           title="Search"
           onPress={() => this.props.navigate(ROUTES.SEARCH)}
@@ -28,9 +28,13 @@ export default class HomeScene extends Component<Props> {
 
 const styles = StyleSheet.create({
   container: {
+    paddingTop: 30,
     flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center',
+  },
+  title: {
+    fontSize: 20,
+    fontWeight: 'bold',
     justifyContent: 'center',
   },
 });
